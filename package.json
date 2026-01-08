@@ -1,0 +1,43 @@
+{
+  "name": "alchemypdf.db",
+  "version": "0.0.0",
+  "description": "AlcheMyPDF Database Project",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": "https://github.com/onlineproducthouse/alchemypdf.db.git",
+  "author": "Bongani Masuku<bongani@1702tech.com>",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=22.13.1"
+  },
+  "scripts": {
+    "clean": "rm -rf node_modules coverage lib .nyc_output",
+    "build": "tsc",
+    "docker": "docker compose up --build",
+    "docker:kill": "docker stop $(docker ps -aq) && docker rm $(docker ps -aq) -f",
+    "docker:clean": "docker stop $(docker ps -aq) && docker rm $(docker ps -aq) -f && docker rmi $(docker images -q) -f",
+    "db:up": "node ./scripts/create-db.js && npm run db:migrate",
+    "db:schema:create": "sequelize db:create --env $ENVIRONMENT_NAME",
+    "db:migrate": "sequelize db:migrate --env $ENVIRONMENT_NAME",
+    "db:tables:drop": "sequelize db:migrate:undo --env $ENVIRONMENT_NAME",
+    "db:down": "sequelize db:drop --env $ENVIRONMENT_NAME"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "@types/sequelize": "^4.28.20",
+    "@types/validator": "^13.12.2",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "pg": "^8.13.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.4",
+    "sequelize-cli": "^6.6.2",
+    "uuid": "^10.0.0"
+  }
+}
