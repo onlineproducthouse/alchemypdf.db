@@ -10,17 +10,6 @@ export type DatabaseConfig = {
   host: string
   port: string
   database: string
-
-  sslCertName: string
-
-  dialectOptions?: {
-    ssl: {
-      ca: Buffer
-      require: boolean
-      rejectUnauthorized: boolean
-    }
-  }
-
   options: Options
 }
 
@@ -39,8 +28,6 @@ let DBConfig: DatabaseConfig = {
   port: process.env.DB_PORT,
   database: process.env.DB_NAME,
 
-  sslCertName: "root.cert",
-
   options: {
     query: { raw: true, },
 
@@ -54,21 +41,6 @@ let DBConfig: DatabaseConfig = {
     }
   }
 }
-
-// if (process.env.ENVIRONMENT_NAME && process.env.ENVIRONMENT_NAME !== "local") {
-//   const certFile: string = `${require('path').resolve('./')}/${DBConfig.sslCertName}`
-//   if (fs.statSync(certFile).isFile)
-//     DBConfig = {
-//       ...DBConfig,
-//       dialectOptions: {
-//         ssl: {
-//           ca: fs.readFileSync(certFile),
-//           require: true,
-//           rejectUnauthorized: false,
-//         }
-//       }
-//     }
-// }
 
 const config: Environments = {
   local: DBConfig,
