@@ -7,16 +7,12 @@ module.exports = {
   up: async (queryInterface, _Sequelize) => {
     await queryInterface.bulkInsert(RequestStateTableName, [
       {
-        [RequestStateTableReferenceKey]: "Added",
-        description: "Added",
+        [RequestStateTableReferenceKey]: "Pending",
+        description: "Pending",
       },
       {
         [RequestStateTableReferenceKey]: "InProgress",
         description: "In Progress",
-      },
-      {
-        [RequestStateTableReferenceKey]: "Failed",
-        description: "Failed",
       },
       {
         [RequestStateTableReferenceKey]: "AttemptLimitReached",
