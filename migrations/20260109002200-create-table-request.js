@@ -13,7 +13,7 @@ const {
   setForeignKey,
   setUniqueColumn,
   createSchemaConstraints,
-} = require("oph.sequelize.helpers")
+} = require("oph.sqlize.helpers")
 
 const { RequestTableExternalKey } = require("../lib/constants/TABLE_EXTERNAL_KEYS")
 
