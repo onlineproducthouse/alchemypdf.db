@@ -21,12 +21,12 @@ export type Environments = {
 
 
 let DBConfig: DatabaseConfig = {
-  dialect: process.env.DB_PROTOCOL,
-  username: process.env.DB_USERNAME,
-  password: process.env.DB_PASSWORD,
-  host: process.env.DB_HOST,
-  port: process.env.DB_PORT,
-  database: process.env.DB_NAME,
+  dialect: process.env.ALCHEMYPDF_DB_PROTOCOL,
+  username: process.env.ALCHEMYPDF_DB_USERNAME,
+  password: process.env.ALCHEMYPDF_DB_PASSWORD,
+  host: process.env.ALCHEMYPDF_DB_HOST,
+  port: process.env.ALCHEMYPDF_DB_PORT,
+  database: process.env.ALCHEMYPDF_DB_NAME,
 
   options: {
     query: { raw: true, },
