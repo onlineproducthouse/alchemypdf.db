@@ -1,6 +1,6 @@
 # AlcheMyPDF NodeJS Sequelize Database Project
 
-This project is responsible for maintaining the AlcheMyPDF database.
+This project is responsible for maintaining the AlcheMyPDF database migrations.
 
 ## Dependencies
 
