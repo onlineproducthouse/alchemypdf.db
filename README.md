@@ -1,6 +1,6 @@
 # AlcheMyPDF NodeJS Sequelize Database Project
 
-This project is responsible for maintaining the AlcheMyPDF database migrations.
+AlcheMyPDF database migrations project
 
 ## Dependencies
 
@@ -10,8 +10,8 @@ A running instance of PostreSQL is required
 
 ```bash
 # clone repository
-mkdir alchemypdf
-cd alchemypdf
+mkdir alchemypdf.db
+cd alchemypdf.db
 git clone https://github.com/onlineproducthouse/alchemypdf.db.git .
 
 # install dependencies
