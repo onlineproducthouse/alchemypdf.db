@@ -28,12 +28,12 @@ npm run build
 export ENVIRONMENT_NAME=local
 
 # set environment variables for the postgres database instance
-export ALCHEMYPDF_DB_HOST=127.0.0.1
-export ALCHEMYPDF_DB_NAME=alchemypdf
-export ALCHEMYPDF_DB_PASSWORD=password
-export ALCHEMYPDF_DB_PORT=5432
 export ALCHEMYPDF_DB_PROTOCOL=postgres
 export ALCHEMYPDF_DB_USERNAME=root
+export ALCHEMYPDF_DB_PASSWORD=password
+export ALCHEMYPDF_DB_HOST=127.0.0.1
+export ALCHEMYPDF_DB_PORT=5432
+export ALCHEMYPDF_DB_NAME=alchemypdf
 
 # run the database migration
 npm run db:up
