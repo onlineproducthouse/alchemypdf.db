@@ -13,7 +13,7 @@ const {
   setForeignKey,
   setUniqueColumn,
   createSchemaConstraints,
-} = require("oph.sqlize.utilities")
+} = require("alchemypdf.db.utils")
 
 const { RequestTableExternalKey } = require("../lib/constants/TABLE_EXTERNAL_KEYS")
 

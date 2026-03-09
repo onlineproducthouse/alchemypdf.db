@@ -34,7 +34,7 @@
     "typescript": "^5.6.2"
   },
   "dependencies": {
-    "oph.sqlize.utilities": "github:onlineproducthouse/oph.sqlize.utilities#main",
+    "alchemypdf.db.utils": "github:onlineproducthouse/alchemypdf.db.utils#main",
     "pg": "^8.13.0",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.37.4",

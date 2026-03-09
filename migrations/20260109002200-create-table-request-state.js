@@ -3,7 +3,7 @@
 const { RequestStateTableName } = require("../lib/constants/TABLE_NAMES")
 const { RequestStateTablePrimaryKey } = require("../lib/constants/TABLE_PRIMARY_KEYS")
 const { RequestStateTableReferenceKey } = require("../lib/constants/TABLE_REFERENCE_KEYS")
-const { createReferenceTable } = require("oph.sqlize.utilities")
+const { createReferenceTable } = require("alchemypdf.db.utils")
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
