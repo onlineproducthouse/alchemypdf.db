@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "repository": "https://github.com/onlineproducthouse/alchemypdf.db.git",
-  "author": "Bongani Masuku<bongani@1702tech.com>",
+  "author": "onlineproducthouse<info@onlineproducthouse.com>",
   "license": "MIT",
   "private": true,
   "engines": {

@@ -4,7 +4,7 @@ ARG IMAGE_REGISTRY_BASE_URL
 
 FROM ${IMAGE_REGISTRY_BASE_URL}/node:25.2.1 AS builder
 
-LABEL maintainer="Bongani Masuku <bongani@1702tech.com>"
+LABEL maintainer="onlineproducthouse <info@onlineproducthouse.com>"
 
 RUN mkdir -p /home/node/app/ && chown -R node:node /home/node/app
 
